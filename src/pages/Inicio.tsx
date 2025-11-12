@@ -67,13 +67,15 @@ export default function Inicio() {
           
           {/* Presentation Controls */}
           <div className="flex justify-center gap-4 mt-8">
-            <button
+          {/*  <button
               onClick={() => setShowPresentationMode(true)}
               className="flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-400 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all hover:scale-105"
             >
               <Presentation size={20} />
               Modo Presentación
             </button>
+
+          */}
             <button
               onClick={() => document.documentElement.requestFullscreen()}
               className="flex items-center gap-2 bg-zinc-200 dark:bg-zinc-800 text-zinc-900 dark:text-zinc-100 px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all hover:scale-105"
