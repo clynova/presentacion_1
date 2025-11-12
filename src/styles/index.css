@@ -1,22 +1,26 @@
 @import "tailwindcss";
 
-/* Asegurar que los cambios de tema sean suaves */
+/* Configuración de Tailwind v4 para dark mode */
+@theme {
+  --color-brand-50: #fef2f2;
+  --color-brand-100: #fee2e2;
+  --color-brand-200: #fecaca;
+  --color-brand-300: #fca5a5;
+  --color-brand-400: #f87171;
+  --color-brand-500: #ef4444;
+  --color-brand-600: #dc2626;
+  --color-brand-700: #b91c1c;
+  --color-brand-800: #991b1b;
+  --color-brand-900: #7f1d1d;
+}
+
+/* Configurar dark mode para Tailwind v4 - sintaxis correcta */
+@variant dark (.dark &);
+
+/* Transiciones suaves */
 html,
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Forzar que Tailwind aplique los estilos dark correctamente */
-@media (prefers-color-scheme: dark) {
-  html:not(.light) {
-    color-scheme: dark;
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  html:not(.dark) {
-    color-scheme: light;
-  }
 }
 
 /* Estilos para el contenido del blog */
