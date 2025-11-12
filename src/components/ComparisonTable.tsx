@@ -90,7 +90,7 @@ export default function ComparisonTable() {
 
       <div className="bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/10 dark:to-orange-900/10 p-6 text-center border-t border-zinc-200 dark:border-zinc-700">
         <p className="text-zinc-700 dark:text-zinc-300 text-lg font-semibold">
-          <span className="text-red-600 dark:text-red-400 font-bold">8 características exclusivas</span> que nos diferencian de la competencia
+          <span className="text-red-600 dark:text-red-400 font-bold">7 características exclusivas</span> que nos diferencian de la competencia
         </p>
       </div>
     </div>
