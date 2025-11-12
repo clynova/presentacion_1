@@ -45,11 +45,11 @@ export default function Seguridad() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-zinc-950 dark:to-zinc-900 pt-28 pb-16 px-4 md:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50 dark:from-zinc-950 dark:via-zinc-900 dark:to-zinc-950 pt-28 pb-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-block p-4 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl mb-4">
+          <div className="inline-block p-4 bg-gradient-to-br from-red-600 to-red-400 rounded-2xl mb-4">
             <Shield className="w-16 h-16 text-white" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-zinc-900 dark:text-zinc-100">
@@ -67,7 +67,7 @@ export default function Seguridad() {
               key={index}
               className="bg-white dark:bg-zinc-800/50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all border border-zinc-200 dark:border-zinc-700 hover:scale-105"
             >
-              <div className="text-blue-500 mb-4">{feature.icon}</div>
+              <div className="text-red-600 dark:text-red-400 mb-4">{feature.icon}</div>
               <h3 className="text-lg font-bold mb-2 text-zinc-900 dark:text-zinc-100">
                 {feature.title}
               </h3>
@@ -79,7 +79,7 @@ export default function Seguridad() {
         </div>
 
         {/* Additional Security Measures */}
-        <div className="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl p-8 text-white shadow-xl">
+        <div className="bg-gradient-to-r from-red-600 to-red-400 rounded-2xl p-8 text-white shadow-xl">
           <h2 className="text-3xl font-bold mb-6">Medidas Adicionales de Seguridad</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>

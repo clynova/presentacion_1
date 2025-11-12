@@ -35,11 +35,11 @@ export default function Ciberriesgo() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-red-50 to-rose-50 dark:from-zinc-950 dark:to-zinc-900 pt-28 pb-16 px-4 md:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50 dark:from-zinc-950 dark:via-zinc-900 dark:to-zinc-950 pt-28 pb-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-block p-4 bg-gradient-to-br from-red-500 to-rose-500 rounded-2xl mb-4">
+          <div className="inline-block p-4 bg-gradient-to-br from-red-600 to-red-400 rounded-2xl mb-4">
             <ShieldAlert className="w-16 h-16 text-white" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-zinc-900 dark:text-zinc-100">
@@ -52,7 +52,7 @@ export default function Ciberriesgo() {
 
         {/* Coverage Types */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          <div className="bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl p-8 text-white shadow-xl">
+          <div className="bg-gradient-to-br from-red-700 to-red-500 rounded-2xl p-8 text-white shadow-xl">
             <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
               <AlertTriangle className="w-8 h-8" />
               Gestión de Crisis y Recuperación
@@ -74,7 +74,7 @@ export default function Ciberriesgo() {
             </ul>
           </div>
 
-          <div className="bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl p-8 text-white shadow-xl">
+          <div className="bg-gradient-to-br from-red-800 to-red-600 rounded-2xl p-8 text-white shadow-xl">
             <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
               <Scale className="w-8 h-8" />
               Protección Legal y Regulatoria
@@ -104,7 +104,7 @@ export default function Ciberriesgo() {
               key={index}
               className="bg-white dark:bg-zinc-800/50 rounded-xl p-6 shadow-lg border border-zinc-200 dark:border-zinc-700 hover:shadow-xl transition-all"
             >
-              <div className="text-red-500 mb-4">{item.icon}</div>
+              <div className="text-red-600 dark:text-red-400 mb-4">{item.icon}</div>
               <h3 className="text-lg font-bold mb-2 text-zinc-900 dark:text-zinc-100">
                 {item.title}
               </h3>
@@ -116,7 +116,7 @@ export default function Ciberriesgo() {
         </div>
 
         {/* Quote */}
-        <div className="bg-gradient-to-r from-red-500 to-rose-500 rounded-2xl p-8 text-white shadow-xl text-center">
+        <div className="bg-gradient-to-r from-red-600 to-red-400 rounded-2xl p-8 text-white shadow-xl text-center">
           <ShieldAlert className="w-16 h-16 mx-auto mb-6" />
           <p className="text-2xl font-semibold italic mb-6">
             "El seguro de ciberriesgo actúa como una red de seguridad financiera, permitiendo que la empresa se recupere rápidamente ante cualquier evento cibernético sin comprometer su estabilidad operativa."

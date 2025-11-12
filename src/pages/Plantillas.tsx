@@ -53,14 +53,14 @@ export default function Plantillas() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-zinc-950 dark:to-zinc-900 pt-28 pb-16 px-4 md:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50 dark:from-zinc-950 dark:via-zinc-900 dark:to-zinc-950 pt-28 pb-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-pink-400 to-sky-400 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
             Plantillas y Diseños
           </h1>
-          <p className="text-xl text-zinc-600 dark:text-zinc-400">
+          <p className="text-xl text-zinc-700 dark:text-zinc-300">
             Explora las maquetas visuales del proyecto E-commerce DeReyes
           </p>
         </div>
@@ -116,7 +116,7 @@ export default function Plantillas() {
                 onClick={() => goToSlide(index)}
                 className={`aspect-video rounded-lg overflow-hidden border-2 transition-all hover:scale-105 ${
                   currentIndex === index
-                    ? "border-pink-400 shadow-lg"
+                    ? "border-red-500 shadow-lg"
                     : "border-zinc-200 dark:border-zinc-700 opacity-60 hover:opacity-100"
                 }`}
               >

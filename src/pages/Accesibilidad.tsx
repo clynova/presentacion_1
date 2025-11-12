@@ -6,34 +6,34 @@ export default function AccesibilidadPage() {
       icon: <Moon className="w-10 h-10" />,
       title: "Modo Oscuro / Claro",
       description: "Alternancia entre tema oscuro y claro para mayor comodidad visual según preferencias del usuario.",
-      gradient: "from-indigo-500 to-purple-500"
+      gradient: "from-red-600 to-red-400"
     },
     {
       icon: <Bell className="w-10 h-10" />,
       title: "Notificaciones Automáticas",
       description: "Sistema de notificaciones internas y push automáticas para mantener informados a los usuarios.",
-      gradient: "from-blue-500 to-cyan-500"
+      gradient: "from-red-700 to-red-500"
     },
     {
       icon: <Search className="w-10 h-10" />,
       title: "Búsqueda Global Inteligente",
       description: "Búsqueda optimizada que permite encontrar productos, órdenes y clientes de forma rápida y precisa.",
-      gradient: "from-green-500 to-emerald-500"
+      gradient: "from-red-500 to-orange-400"
     },
     {
       icon: <Smartphone className="w-10 h-10" />,
       title: "Diseño Responsivo",
       description: "Panel completamente responsivo y accesible desde móviles, tablets y desktops con experiencia óptima.",
-      gradient: "from-orange-500 to-red-500"
+      gradient: "from-red-800 to-red-600"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-50 dark:from-zinc-950 dark:to-zinc-900 pt-28 pb-16 px-4 md:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50 dark:from-zinc-950 dark:via-zinc-900 dark:to-zinc-950 pt-28 pb-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-block p-4 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl mb-4">
+          <div className="inline-block p-4 bg-gradient-to-br from-red-600 to-red-400 rounded-2xl mb-4">
             <Accessibility className="w-16 h-16 text-white" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-zinc-900 dark:text-zinc-100">
@@ -65,7 +65,7 @@ export default function AccesibilidadPage() {
         </div>
 
         {/* Benefits Section */}
-        <div className="bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl p-8 text-white shadow-xl">
+        <div className="bg-gradient-to-r from-red-600 to-red-400 rounded-2xl p-8 text-white shadow-xl">
           <h2 className="text-3xl font-bold mb-6">Beneficios Clave</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white/10 rounded-xl p-6">

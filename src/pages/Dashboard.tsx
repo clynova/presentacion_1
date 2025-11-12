@@ -5,7 +5,7 @@ export default function Dashboard() {
     {
       icon: <Package className="w-10 h-10" />,
       title: "Gestión de Productos",
-      color: "from-purple-500 to-pink-500",
+      color: "from-red-600 to-red-400",
       features: [
         "Historial de modificaciones por producto",
         "Indicadores de rendimiento: ventas, rotación, margen",
@@ -15,7 +15,7 @@ export default function Dashboard() {
     {
       icon: <ShoppingCart className="w-10 h-10" />,
       title: "Gestión de Órdenes y Ventas",
-      color: "from-blue-500 to-cyan-500",
+      color: "from-red-700 to-red-500",
       features: [
         "Registro detallado de modificaciones por usuario",
         "Flujo visual de estados: En proceso → En preparación → En tránsito → Entregado",
@@ -25,7 +25,7 @@ export default function Dashboard() {
     {
       icon: <Truck className="w-10 h-10" />,
       title: "Logística y Distribución",
-      color: "from-green-500 to-emerald-500",
+      color: "from-red-800 to-red-600",
       features: [
         "Visualización del estado de cada envío con número de rastreo",
         "Mapa interactivo de entregas recientes",
@@ -35,7 +35,7 @@ export default function Dashboard() {
     {
       icon: <BarChart3 className="w-10 h-10" />,
       title: "Análisis y Reportes",
-      color: "from-orange-500 to-red-500",
+      color: "from-red-500 to-orange-500",
       features: [
         "Gráficos analíticos de ventas diarias, semanales y mensuales",
         "Identificación de productos, categorías y clientes destacados",
@@ -45,11 +45,11 @@ export default function Dashboard() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50 dark:from-zinc-950 dark:to-zinc-900 pt-28 pb-16 px-4 md:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50 dark:from-zinc-950 dark:via-zinc-900 dark:to-zinc-950 pt-28 pb-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-block p-4 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl mb-4">
+          <div className="inline-block p-4 bg-gradient-to-br from-red-600 to-red-400 rounded-2xl mb-4">
             <LayoutDashboard className="w-16 h-16 text-white" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-zinc-900 dark:text-zinc-100">
@@ -75,8 +75,8 @@ export default function Dashboard() {
               </h3>
               <ul className="space-y-3">
                 {module.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-start text-zinc-600 dark:text-zinc-400">
-                    <span className="mr-2 text-purple-500">✓</span>
+                  <li key={idx} className="flex items-start text-zinc-700 dark:text-zinc-300">
+                    <span className="mr-2 text-red-600 dark:text-red-400">✓</span>
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -86,7 +86,7 @@ export default function Dashboard() {
         </div>
 
         {/* Export Feature */}
-        <div className="bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl p-8 text-white shadow-xl">
+        <div className="bg-gradient-to-r from-red-600 to-red-400 rounded-2xl p-8 text-white shadow-xl">
           <div className="flex items-center gap-4 mb-4">
             <FileSpreadsheet className="w-12 h-12" />
             <div>

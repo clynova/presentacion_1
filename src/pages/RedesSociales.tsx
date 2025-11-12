@@ -30,11 +30,11 @@ export default function RedesSociales() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 dark:from-zinc-950 dark:to-zinc-900 pt-28 pb-16 px-4 md:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 via-white to-red-50 dark:from-zinc-950 dark:via-zinc-900 dark:to-zinc-950 pt-28 pb-16 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-block p-4 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl mb-4">
+          <div className="inline-block p-4 bg-gradient-to-br from-red-600 to-red-400 rounded-2xl mb-4">
             <Share2 className="w-16 h-16 text-white" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-zinc-900 dark:text-zinc-100">
@@ -52,7 +52,7 @@ export default function RedesSociales() {
               key={index}
               className="bg-white dark:bg-zinc-800/50 rounded-xl p-6 shadow-lg border border-zinc-200 dark:border-zinc-700 hover:shadow-xl transition-all"
             >
-              <div className="text-orange-500 mb-4">{feature.icon}</div>
+              <div className="text-red-600 dark:text-red-400 mb-4">{feature.icon}</div>
               <h3 className="text-lg font-bold mb-2 text-zinc-900 dark:text-zinc-100">
                 {feature.title}
               </h3>
@@ -65,7 +65,7 @@ export default function RedesSociales() {
 
         {/* Social Platforms */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-8 text-white shadow-xl">
+          <div className="bg-gradient-to-br from-blue-600 to-blue-500 rounded-2xl p-8 text-white shadow-xl">
             <Facebook className="w-12 h-12 mb-4" />
             <h3 className="text-2xl font-bold mb-2">Facebook</h3>
             <p className="text-white/90">
@@ -82,7 +82,7 @@ export default function RedesSociales() {
         </div>
 
         {/* Quote */}
-        <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 text-white shadow-xl text-center">
+        <div className="bg-gradient-to-r from-red-600 to-red-400 rounded-2xl p-8 text-white shadow-xl text-center">
           <p className="text-2xl font-semibold italic mb-4">
             "Con este módulo, cada nuevo producto o promoción puede difundirse automáticamente en las redes sociales, generando tráfico y presencia constante sin depender de publicaciones manuales."
           </p>
