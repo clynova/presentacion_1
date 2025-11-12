@@ -25,17 +25,17 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     // Aplicar el tema al elemento html
     const htmlElement = document.documentElement;
     
-    // Remover ambas clases primero para asegurar limpieza
+    // Forzar re-paint eliminando y agregando clase
     htmlElement.classList.remove("dark", "light");
     
-    // Aplicar la clase correspondiente
-    if (theme === "dark") {
-      htmlElement.classList.add("dark");
-      htmlElement.style.colorScheme = "dark";
-    } else {
-      htmlElement.classList.add("light");
-      htmlElement.style.colorScheme = "light";
-    }
+    // Pequeño delay para asegurar que se remueva antes de agregar
+    requestAnimationFrame(() => {
+      if (theme === "dark") {
+        htmlElement.classList.add("dark");
+      } else {
+        htmlElement.classList.add("light");
+      }
+    });
     
     // Guardar en localStorage
     localStorage.setItem("theme", theme);
