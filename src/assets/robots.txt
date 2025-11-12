@@ -1,0 +1,53 @@
+# robots.txt para Presentación
+# Mejores prácticas SEO y seguridad
+
+User-agent: *
+# Permitir todo el contenido público
+Allow: /
+
+# Bloquear carpetas privadas y de desarrollo
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /backend/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /tests/
+Disallow: /scripts/
+Disallow: /config/
+Disallow: /docs/
+
+# Permitir recursos estáticos
+Allow: /assets/
+Allow: /images/
+Allow: /public/
+
+# Sitemap para mejor indexación
+
+
+# Bloquear rastreadores de spam y scraping conocidos
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+User-agent: DotBot
+Disallow: /
+
+# Crawl-delay para evitar sobrecarga
+Crawl-delay: 5
+
+# Instrucciones para Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Instrucciones para Bingbot
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Fin de archivo
