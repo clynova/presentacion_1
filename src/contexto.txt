@@ -1,0 +1,207 @@
+
+
+
+
+
+Presentación del Proyecto E-commerce DeReyes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🔐 1. Seguridad y Control de Acceso
+Meta: Salvaguardar la información y administrar de forma precisa los accesos de los usuarios.
+Principales medidas implementadas:
+Autenticación robusta: inicio de sesión mediante JWT(Tokens de seguridad), garantizando que solo usuarios legítimos puedan ingresar.
+
+
+Gestión de roles: definición clara de perfiles (Administrador, Moderador, Cliente) con permisos específicos.
+
+
+Trazabilidad completa: registro detallado de toda la actividad del sistema (ingresos, modificaciones, descargas, eliminaciones) para auditorías o seguimiento interno.
+
+
+Prevención de riesgos: cierre automático de sesión por inactividad y bloqueo de cuentas tras múltiples intentos fallidos.
+
+
+Vigilancia activa: monitoreo de IPs y alertas automáticas ante accesos o comportamientos sospechosos.
+
+
+Copias de seguridad diarias: respaldo automatizado de la base de datos para prevenir pérdidas de información.
+
+
+Prevención de errores humanos: validaciones de datos y controles de tipificación para reducir inconsistencias.
+
+
+Cifrado de información: toda la información sensible (clientes, historiales, transacciones) se almacena en formato cifrado, imposible de interpretar en caso de brecha.
+
+
+Cierre seguro de sesión y cookies: el cierre de sesión elimina toda conexión activa, evitando accesos en dispositivos compartidos; las cookies se gestionan con medidas adicionales de seguridad para impedir su uso indebido.
+
+
+
+
+📊 2. Panel de Control (Dashboard)
+Meta: Centralizar la gestión del negocio con una herramienta visual, segura y completa.
+🧩 Gestión de Productos
+Historial de modificaciones por producto.
+
+
+Indicadores de rendimiento: ventas, rotación, margen de beneficio.
+
+
+Control de stock con alertas automáticas.
+
+
+🛒 Gestión de Órdenes y Ventas
+Registro detallado de modificaciones por usuario.
+
+
+Flujo visual de estados: En proceso → En preparación → En tránsito → Entregado.
+
+
+Acceso a detalle de productos, precios, clientes y métodos de pago.
+
+
+🚚 Logística y Distribución
+Visualización del estado de cada envío con número de rastreo.
+
+
+Mapa interactivo de entregas recientes para análisis geográfico.
+
+
+📈 Análisis y Reportes
+Gráficos analíticos de ventas diarias, semanales y mensuales.
+
+
+Identificación de productos, categorías y clientes destacados.
+
+
+KPIs principales: ventas totales, órdenes del día, nuevos clientes, bajo stock.
+
+
+Exportación de datos en Excel o PDF.
+
+💻 3. Experiencia y Accesibilidad
+Meta: Garantizar una experiencia moderna, rápida y adaptable.
+Alternancia entre modo oscuro y claro.
+
+
+Notificaciones internas y push automáticas.
+
+
+Búsqueda global inteligente optimizada.
+
+
+Panel completamente responsivo y accesible desde móviles o tablets.
+
+
+
+📣 4. Gestión de Redes Sociales
+Meta: Aumentar la exposición del catálogo y automatizar la difusión de contenido.
+Funciones principales:
+Publicación automática de productos nuevos en Facebook e Instagram.
+
+
+Reimpulso de publicaciones existentes para mantener la visibilidad.
+
+
+Programación de campañas y promociones por fecha.
+
+
+Seguimiento de métricas básicas (alcance, clics, interacciones).
+
+
+Conexión directa con WhatsApp Business para atención inmediata.
+
+
+“Con este módulo, cada nuevo producto o promoción puede difundirse automáticamente en las redes sociales, generando tráfico y presencia constante sin depender de publicaciones manuales.”
+
+
+📰 5. Blog Corporativo
+Meta: Fortalecer la marca, atraer tráfico orgánico y fidelizar clientes.
+Beneficios clave:
+Atracción de tráfico orgánico (SEO): creación de artículos optimizados que se posicionan en buscadores.
+
+
+Generación de autoridad y confianza: contenido educativo que muestra experiencia en el rubro.
+
+
+Fomento de la lealtad: publicación de recetas, consejos o usos de productos que mantengan el interés del cliente.
+
+
+Canal de venta indirecta: integración de productos dentro de los artículos (ej. “5 recetas con aceite de oliva DeReyes”).
+
+
+Sinergia con redes sociales: contenido compartible que amplifica la presencia digital.
+
+
+Captura de leads: formulario de suscripción para campañas de email marketing.
+
+
+Funcionalidades del blog:
+Sistema de comentarios para crear comunidad.
+
+
+Etiquetas y categorías para fácil navegación.
+
+
+Botones de compartición social.
+
+
+Enlaces contextuales hacia productos del catálogo.
+
+
+
+
+
+🛡️ 6. Seguro de Ciberriesgo (Plan de Respaldo Financiero Digital)
+Meta: Proteger la empresa ante eventuales ataques informáticos o brechas de datos.
+¿Qué cubre?
+1. Gestión de Crisis y Recuperación (Daños Propios)
+Costos de investigación y equipos forenses.
+
+
+Restauración de datos y reconstrucción del sistema.
+
+
+Compensación por pérdida de ingresos durante la interrupción.
+
+
+2. Protección Legal y Regulatoria (Responsabilidad ante Terceros)
+Gastos legales y defensa ante organismos reguladores.
+
+
+Costos de notificación a clientes afectados.
+
+
+Cobertura de multas y sanciones por incumplimiento normativo.
+
+
+“El seguro de ciberriesgo actúa como una red de seguridad financiera, permitiendo que la empresa se recupere rápidamente ante cualquier evento cibernético sin comprometer su estabilidad operativa.”
+
+
