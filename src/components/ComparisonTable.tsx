@@ -7,7 +7,6 @@ export default function ComparisonTable() {
     { name: "Gestión de Inventario Inteligente", ours: true, competition: true },
     { name: "Integración WhatsApp Business", ours: true, competition: false },
     { name: "Blog Corporativo SEO", ours: true, competition: false },
-    { name: "Seguro de Ciberriesgo", ours: true, competition: false },
     { name: "Modo Oscuro / Claro", ours: true, competition: false },
     { name: "Responsive Design", ours: true, competition: true },
     { name: "PWA (Instalable)", ours: true, competition: false },
