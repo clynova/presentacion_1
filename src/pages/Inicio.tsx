@@ -5,6 +5,14 @@ import PresentationMode from "../components/PresentationMode";
 import ExportOptions from "../components/ExportOptions";
 import AnimatedStats from "../components/AnimatedStats";
 import ProjectTimeline from "../components/ProjectTimeline";
+import InteractiveDemo from "../components/InteractiveDemo";
+import TechStack from "../components/TechStack";
+import ComparisonTable from "../components/ComparisonTable";
+import LiveMetrics from "../components/LiveMetrics";
+import Testimonials from "../components/Testimonials";
+import KeyFeatures from "../components/KeyFeatures";
+import ScrollToTop from "../components/ScrollToTop";
+import QuickNav from "../components/QuickNav";
 
 export default function Inicio() {
   const [showPresentationMode, setShowPresentationMode] = useState(false);
@@ -87,32 +95,22 @@ export default function Inicio() {
         </div>
 
         {/* Animated Stats */}
-        <AnimatedStats />
-
-        {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {sections.map((section, index) => (
-            <Link
-              key={index}
-              to={section.link}
-              className="group relative bg-white dark:bg-zinc-800/50 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-zinc-200 dark:border-zinc-700 hover:scale-105"
-            >
-              <div className={`absolute inset-0 bg-gradient-to-br ${section.gradient} opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity`}></div>
-              
-              <div className={`mb-4 text-transparent bg-gradient-to-br ${section.gradient} bg-clip-text`}>
-                {section.icon}
-              </div>
-              
-              <h3 className="text-xl font-bold mb-2 text-zinc-900 dark:text-zinc-100 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-red-600 group-hover:to-red-400 group-hover:bg-clip-text transition-all">
-                {section.title}
-              </h3>
-              
-              <p className="text-zinc-600 dark:text-zinc-400 text-sm">
-                {section.description}
-              </p>
-            </Link>
-          ))}
+        <div id="stats">
+          <AnimatedStats />
         </div>
+
+        {/* Live Metrics Dashboard */}
+        <LiveMetrics />
+
+        {/* Interactive Demo <InteractiveDemo />*/}
+        <div id="demo">
+          
+        </div>
+
+        {/* Key Features */}
+        <KeyFeatures />
+
+
 
         {/* CTA Section */}
         <div className="text-center bg-gradient-to-r from-red-600 to-red-400 rounded-2xl p-8 text-white shadow-xl mb-12">
@@ -126,12 +124,31 @@ export default function Inicio() {
           </Link>
         </div>
 
+        {/* Comparison Table */}
+        <ComparisonTable />
+
+        {/* Tech Stack */}
+        <div id="tech">
+          <TechStack />
+        </div>
+
+        {/* Testimonials */}
+        <div id="testimonios">
+          <Testimonials />
+        </div>
+
         {/* Project Timeline */}
         <ProjectTimeline />
 
         {/* Export Options */}
         <ExportOptions />
       </div>
+
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
+      
+      {/* Quick Navigation */}
+      <QuickNav />
 
       {/* Presentation Mode Modal */}
       {showPresentationMode && (
