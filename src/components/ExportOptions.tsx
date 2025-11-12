@@ -7,9 +7,14 @@ export default function ExportOptions() {
   const exportAsPDF = async () => {
     setIsExporting(true);
     try {
-      // Simular exportación
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      alert("Exportación iniciada. En una implementación real, esto generaría un PDF.");
+      // Descargar el PDF real desde assets
+      const pdfUrl = "/src/assets/PresentaciónDeReyes.pdf";
+      const a = document.createElement("a");
+      a.href = pdfUrl;
+      a.download = "PresentaciónDeReyes.pdf";
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
     } finally {
       setIsExporting(false);
     }

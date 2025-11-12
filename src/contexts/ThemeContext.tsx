@@ -12,25 +12,32 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {
-    // Verificar localStorage o preferencias del sistema
+    // Verificar localStorage primero
     const savedTheme = localStorage.getItem("theme") as Theme | null;
     if (savedTheme) return savedTheme;
     
     // Verificar preferencias del sistema
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    }
-    return "light";
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return prefersDark ? "dark" : "light";
   });
 
   useEffect(() => {
-    // Actualizar el DOM y localStorage
-    const root = document.documentElement;
+    // Aplicar el tema al elemento html
+    const htmlElement = document.documentElement;
+    
+    // Remover ambas clases primero para asegurar limpieza
+    htmlElement.classList.remove("dark", "light");
+    
+    // Aplicar la clase correspondiente
     if (theme === "dark") {
-      root.classList.add("dark");
+      htmlElement.classList.add("dark");
+      htmlElement.style.colorScheme = "dark";
     } else {
-      root.classList.remove("dark");
+      htmlElement.classList.add("light");
+      htmlElement.style.colorScheme = "light";
     }
+    
+    // Guardar en localStorage
     localStorage.setItem("theme", theme);
   }, [theme]);
 
